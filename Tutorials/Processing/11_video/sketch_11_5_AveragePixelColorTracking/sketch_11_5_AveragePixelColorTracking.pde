@@ -66,11 +66,13 @@ void draw() {
   if (count > 0) { 
     avgX = avgX / count;
     avgY = avgY / count;
-    // Draw a circle at the tracked pixel
+    // Draw a rect at the tracked pixel
     fill(255);
     strokeWeight(4.0);
     stroke(0);
-    ellipse(avgX, avgY, 24, 24);
+    rect(avgX, avgY, 24, 24);
+    ellipse(avgX, avgY, 30, 30);
+    rect(avgX, avgY, 34, 34);
   }
 }
 
